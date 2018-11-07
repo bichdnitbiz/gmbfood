@@ -1,0 +1,124 @@
+.workshops-events{
+	padding: 0 34%;
+	.workshops-events__title{
+		padding:133px 95px 147px 95px;
+		h2{
+			font-family: $font__main;
+			font-size: 7.5rem;
+			line-height: 1.07;
+			text-align: center;
+			color: $color__text-title;
+		}
+		&:before{
+			content: "";
+		    width: 17rem;
+		    height: 25rem;
+		    background: url(assets/admin/images/tree2.png);
+		    background-repeat: no-repeat;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    position: absolute;
+		}
+	}
+}
+.recent-workshops{
+	padding: 0 13%;
+	.recent-workshop-desc{
+		padding-top: 251px;
+		span{
+			font-family: $font__default;
+			font-size: 1.4;
+			font-weight: 300;
+			line-height: 1.07;
+			color:$color__text-desc;
+		}
+
+	}
+	.recent-workshop-title{
+		padding:14px 0px 74px 0px;
+		width: 42%;
+		h2{
+			font-family: $font__main;
+			font-size: 6.4rem;
+			line-height: 1.09;
+			color: #003b5b;
+		}
+	}
+
+}
+.workshops-about{
+	padding: 0 13%;
+	.workshops-about__block{
+	    padding: 120px 125px 160px 120px;
+		.name{
+			span{
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+		  		color: $color__text-desc;
+			}
+		}
+		.titile{
+			h2{
+				font-family: $font__main;
+				font-size: 36px;
+				line-height: 1.28;
+				color: #003b5b;
+				padding:26px  74px 0px 0px;
+			}
+		}
+		.desc{
+			h2{
+				font-family: $font__main;
+				font-size: 24px;
+				line-height: 1.46;
+				color: #7cb1ae;
+				padding:39px 0px 20px 0px;
+			}
+		}
+		.content{
+			p{
+				font-family: Marmelad;
+				font-size: 18px;
+				line-height: 1.56;
+		 		color: #757575;
+			}
+		}
+		.time{
+			h2{
+
+				font-family: $font__main;
+				font-size: 1.8rem;
+				line-height: 1.56;
+				color: $color__text-main;
+			}
+		}
+		.colums1{
+			display: block;
+			padding-right: 70px;
+				.elementor-widget-wrap{
+					border-right: 1px solid #746db5;
+				}
+			&:before{
+				content:"";
+				background: url("assets/admin/images/tree 1.png");
+				width: 40rem;
+				height: 35rem;
+				top: 50%;
+				left: -150%;
+				position: absolute;
+				background-repeat: no-repeat;
+			}
+		}
+		.colums2{
+			display: block;
+			padding-right: 74px;
+				.elementor-widget-wrap{
+					border-right: 1px solid #746db5;
+				}
+		}
+	}
+
+}

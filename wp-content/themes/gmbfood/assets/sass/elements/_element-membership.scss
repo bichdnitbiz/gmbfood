@@ -1,0 +1,84 @@
+.membership-content{
+	padding:0 15px;
+	background-color:$color__background-section1;
+	@include MQ(XXL){
+			padding:0 13%;
+	}
+	.membership-item{
+	margin: 3rem 0px 1.5rem 0px;
+	@include transition(all 0.5s ease-in-out);
+	@include MQ(MD){
+		margin: 5rem 0px 5.5rem 0px;
+	}
+	@include MQ(LG){
+		margin: 15rem 0px 15.5rem 0px;
+	}
+		.membership-item__date{
+			span{	
+				display: block;
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+				text-align: center;
+				color: $color__text-desc;
+				padding:57px 0px 28px 0px;
+			}
+		}
+		.elementor-image-box-content{
+			padding:26px 0px 67px 0px;
+
+			.membership-item__money{
+					font-family: $font__main;
+					font-size: 4.8rem;
+					line-height: 1.15;
+					color:$color__text-title;
+			}
+			ul{
+				padding:30px 0px;
+				margin:0;
+				li{
+					font-family: $font__main;
+					font-size: 1.8rem;
+					line-height: 1.56;
+					text-align: center;
+					color: $color__text-main;
+					list-style: none;
+					@include MQ(MD){
+						font-size: 1.5rem;
+					}
+
+				}
+			}
+			.membership-item__register{
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+				text-align: center;
+				color: $color__text-name;
+				padding:17px 21px;
+				background-color: #746db5;
+				display: inline-block;
+				border-radius: 100px 100px;
+			}
+		}
+		&:hover,&.active{
+			cursor: pointer;
+			background-color: $color__background-button-hover;
+		
+			.membership-item__money{
+				color:#d1ebe8;
+			}
+			ul{
+				li{
+					color:#7cb1ae;
+				}
+			}
+			.membership-item__register{
+				background-color: #00c27b;
+				box-shadow: 0 3px 10px 0 rgba(117, 117, 117, 0.5);
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+.contact-padding{
+	padding: 0;
+	@include MQ(MD){
+		padding: 0 13%;
+	}
+}
+.contact-info{
+	margin:5rem 0px 10rem 0px;
+	@include MQ(MD){
+		margin:6rem 0px 12rem 0px;
+	}
+	@include MQ(LG){
+		margin:9rem 0px 26rem 0px;
+	}
+	.contact-info__left{
+		padding-right: 0;
+		@include MQ(MD){
+			padding-right: 5rem;
+		}
+		@include MQ(L){
+			padding-right: 14rem;
+		}
+		.address-title,.phone-title{
+
+			span{
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 500;
+				line-height: 1.07;
+				color: $color__text-desc;
+			}
+		}
+		.address-content{
+			font-family: $font__main;
+			font-size: 1.8rem;
+			line-height: 1.56;
+			color: $color__text-main;
+			padding:5.5rem 0px 5rem 0px ;
+		}
+		.phone-title{
+			padding-bottom: 2rem;
+		}
+		.phone-number{
+			span{
+				font-family: $font__main;
+				font-size: 1.8rem;
+				line-height: 1.56;
+				color: $color__text-main;
+			}
+		}
+	}
+	.contact-info__right{
+		.title{
+			h2{
+				font-family: $font__main;
+				font-size: 4.8rem;
+				line-height: 1.15;
+				color: #000000;
+				padding-bottom: 4rem;
+			}
+		}
+		.content{
+			p{
+
+				font-family: $font__main;
+				font-size: 1.8rem;
+				line-height: 1.56;
+				color: $color__text-main;
+				padding-bottom: 5rem;
+			}
+		}
+	}
+}
+.contact-form2{
+	width: 100%;
+	@include MQ(MD){
+		width: 70%;
+	}
+}

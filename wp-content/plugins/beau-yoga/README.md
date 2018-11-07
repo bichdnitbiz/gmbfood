@@ -1,0 +1,1 @@
+BeauTheme Core Plugin for BeauTheme WP Themes

@@ -1,0 +1,232 @@
+.blog-detail{
+	background-color:$color__background-section2;
+}
+
+.blog-detail__image{
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	@include MQ(SM){
+		height: 300px;
+	}
+	@include MQ(MD){
+		height: 500px;
+	}
+	@include MQ(LG){
+		height: 600px;
+	}
+	@include MQ(XL){
+		height: 700px;
+	}
+	@include MQ(XXL){
+		height: 800px;
+	}
+	img{
+		width:100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.blog-detail__inner{
+	padding: 0;
+	@include MQ(LG){
+		padding: 0 10%;
+	}
+	@include MQ(XL){
+		padding: 0 17%;
+	}
+}
+.blog-detail__date{
+	font-family: $font__default;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 1.07;
+	color: $color__text-desc;
+	padding: 2rem 0px 0.5rem 0px;
+	text-transform: uppercase;
+	@include MQ(MD){
+		padding: 4rem 0px 2.5rem 0px;
+	}
+	@include MQ(LG){
+		padding: 8rem 0px 4.5rem 0px;
+	}
+}
+.blog-detail_title{
+	font-family: $font__main;
+	font-size: 3rem;
+	line-height: 1.09;
+	color: $color__text-title;
+	margin-bottom: 3rem;
+	@include MQ(MD){
+		font-size: 4.4rem;
+	}
+	@include MQ(LG){
+		font-size: 5.4rem;
+	}
+	@include MQ(XL){
+		font-size: 6rem;
+	}
+	@include MQ(XXL){
+		font-size: 6.4rem;
+	}
+}
+.blog-detail__author{
+	color: $color__link-page;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	margin-bottom: 3rem;
+	@include MQ(MD){
+		margin-bottom: 7rem;
+	}
+	img{
+		border-radius: 25px;
+		margin-right: 0.5rem;
+	}
+	.name-author{
+		font-size: 1.4rem;
+		line-height: 1.5rem;
+		color: $color__text-main;
+		font-family: $font__default;
+		text-transform: uppercase;
+	}
+}
+
+//Style content single
+.entry-content{
+	margin: 0;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	@include MQ(LG){
+		font-size: 1.8rem;
+		line-height: 2.8rem;
+	}
+	strong{
+		color: $color__text-menu;
+		font-size: 1.8rem;
+		line-height: 2.5rem;
+		@include MQ(LG){
+			font-size: 3rem;
+			line-height: 4rem;
+		}
+	}
+}
+
+blockquote{
+	background: $color__background-section3;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	padding: 3rem 2rem 0rem 2rem;
+	position: relative;
+	color :$color__link-page;
+	@include MQ(MD){
+		font-size: 3rem;
+		line-height: 4rem;
+		padding: 7rem 13rem 5rem 13rem;
+	}
+	&:before{
+		content: '';
+		background: url('assets/images/block.png') no-repeat;
+		background-position-x: right;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.blog-detail__tag{
+	margin-top: 5rem;
+	margin-bottom: 6.5rem;
+	padding: 2.4rem 0;
+	border-top: 2px solid $color__background-hr;
+	border-bottom: 2px solid $color__background-hr;
+	text-align: left;
+	a{
+		line-height: 2.5rem;
+		font-size: 1.2rem;
+		color: $color__text-name;
+		background: $color__background-button;
+		padding: 6px 10px;
+    	border-radius: 18px;
+    	margin: 0.5rem;
+    	text-transform: uppercase;
+    	display: inline-block;
+    	@include MQ(MD){
+    		font-size: 1.5rem;
+    		padding: 8px 36px;
+    		margin: 0 1rem;
+    	}
+    	&:first-child{
+    		margin-left: 0;
+    	}
+	}
+}
+
+.blog-detail__next{
+	margin-bottom: 18rem;
+	display: inline-block;
+	.blog-detail__text-next{
+		color: $color__text-desc;
+		font-family: $font__default;
+		margin-bottom: 2rem;
+	}
+	a{
+		font-size: 7.5rem;
+		line-height: 8rem;
+		color: $color__text-menu;
+		height: 17rem;
+		overflow: hidden;
+		float: left;
+		&:hover{
+			color: $color__background-button;
+		}
+	}
+}
+
+.blog-detail__content{
+	.tags-share__share{
+		left: 0;
+		@include MQ(XL){
+			left: 4%;
+		}
+		.tags-share__list-social {
+			padding: 10px 0;
+		}
+	}
+	
+	.tags-share__share .tags-share__list-social .social__list{
+		border: none;
+		@include transition(all 0.3s ease-in-out 0s);
+		margin: 0 5px;
+		@include MQ(XL){
+			margin: 7px 0;
+		}
+		&:hover{
+			opacity: 0.6;
+		}
+		&.facebook{
+			background: #3B5998;
+		}
+		&.twitter{
+			background: #26A6D1;
+		}
+		&.google-plus{
+			background: #DD4B39;
+		}	
+		i{
+			color: #fff;
+		}
+	}
+}
+
+.comments-area{
+	margin-top: 8rem;
+	margin-bottom: 20rem;
+}

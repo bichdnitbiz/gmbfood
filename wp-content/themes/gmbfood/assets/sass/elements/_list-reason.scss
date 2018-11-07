@@ -1,0 +1,566 @@
+$primary:       #000;
+$secondary:     #ad1110;
+$link-hover:     #414042;
+$color-brand-blue: #3dc2cf;
+$color-brand-pink: #f195bf;
+$color-brand-yellow: #ffca09;
+$color-brand-purple: #692a81;
+$color-brand-green: #4cbc84;
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #05113b;
+    font-family: "SFUEurostileDemi";
+
+    &.page-template{
+        font-size: 1.3rem;
+        padding: 0;
+        @include MQ(XL){
+            font-size: 1.3rem;
+            padding: 15px 15px 15px 40px;
+        }
+        @include MQ(XXL){
+            font-size: 1.6rem;
+        }
+    }
+}
+
+h2, .h2 { 
+    font-size: 2.4rem;
+    @include MQ(XL){
+        font-size: 3.8rem;
+    }
+    @include MQ(XXL){
+      font-size: 4.8rem;
+    }
+}
+
+h3, .h3 { 
+    font-size: 1.7rem;
+    @include MQ(XL){
+        font-size: 2.4rem;
+    }
+    @include MQ(XXL){
+      font-size: 3.4rem;
+    }
+}
+
+h4, .h4 { 
+    font-size: 1.8rem;
+    @include MQ(XXL){
+      font-size: 2.8rem;
+    }
+}
+
+h5, .h5 { 
+    font-size: 1.4rem;
+    @include MQ(XXL){
+      font-size: 2.4rem;
+    }
+}
+
+h6, .h6 { 
+    font-size: 1.1rem;
+    font-family: $font__default;
+    @include MQ(XXL){
+      font-size: 1.8rem;
+    }
+}
+
+article{
+    overflow: hidden;
+    padding: 150px 20px 0 20px;
+    min-height: 100vh;
+
+    @include MQ(MD){
+        padding: 0;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+//Style Trang chu
+.background-main{
+    img{
+        width: 100%;
+    }
+}
+
+.logo-menu{
+    padding-bottom: 15rem;
+}
+
+// Start page du an
+.page-uu-dai{
+
+}
+
+.page-uu-dai__item{
+    text-align: center;
+    margin: 0 15px 15px 15px;
+    max-width: 100%;
+    color: $link-hover;
+
+    @include MQ(MD){
+        max-width: 32.4%;
+        margin: 0 15px 15px 0;
+    }
+
+    &:nth-child(3n+0){
+        margin-right: 15px;
+
+        @include MQ(MD){
+            margin-right: 0;
+        }
+    }
+    &:nth-child(1){
+        background-color: $color-brand-blue;
+    }
+    &:nth-child(2){
+        background-color: $color-brand-pink;
+    }
+    &:nth-child(3){
+        background-color: $color-brand-yellow;
+    }
+    &:nth-child(4){
+        background-color: $color-brand-purple;
+        color: #fff;
+        margin-bottom: 15px;
+
+        @include MQ(MD){
+            margin-bottom: 0;
+        }
+        .modal{
+            color: $link-hover;
+        }
+    }
+    &:nth-child(5){
+        background-color: $secondary;
+        color: #fff;
+        margin-bottom: 15px;
+
+        @include MQ(MD){
+            margin-bottom: 0;
+        }
+        .modal{
+            color: $link-hover;
+        }
+    }
+    &:nth-child(6){
+        background-color: $color-brand-green;
+        color: #fff;
+        margin-bottom: 15px;
+        .modal{
+            color: $link-hover;
+        }
+    }
+
+    .image-uu-dai{
+        padding-bottom: 5rem;
+        padding-top: 7.5rem;
+    }
+    
+    .title-uu-dai{
+        padding-bottom: 3rem;
+        h3{
+            text-transform: uppercase;
+        }
+    }
+
+    .price-uu-dai{
+        padding-bottom: 2rem;
+    }
+    
+    .sale-price{
+        text-decoration-line: line-through;
+    }
+
+    button{
+        margin-bottom: 4.5rem;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        border-radius: 0;
+        padding: 9px 81px;
+        color: $primary;
+        background: #fff;
+    }
+
+    h4{
+        text-transform: uppercase;
+    }
+
+    .modal.show .modal-dialog{
+        -webkit-transform: translate(0, 15%);
+        transform: translate(0, 15%);
+        margin: 0 15px;
+
+        @include MQ(MD){
+            -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+            margin: 0.5rem;
+        }
+    }
+
+    .modal-content{
+        background: transparent;
+    }
+
+    .modal-body{
+        padding: 45px 0 100px;
+        background: #fff;
+        margin-bottom: 30px;
+    }
+
+    .modal-footer{
+        background: #fff;
+        padding: 20px 0 30px 0;
+    }
+
+    .content-uu-dai{
+        font-size: 16px;
+        line-height: 35px;
+        width: 100%;
+    }
+
+    .content-quangcao{
+        text-align: left;
+        padding: 0 30px;
+        
+        h4{
+            text-align: center;
+        }
+
+        .content-quangcao__left{
+            position: relative;
+            &::before{
+                content: '';
+                height: 60%;
+                width: 1px;
+                background: $color-brand-yellow;
+                position: absolute;
+                top: 10%;
+                right: 10px;
+            }
+        }
+    }
+
+    .header-popup{
+        text-align: center;
+        padding-bottom: 45px;
+        text-transform: uppercase;
+        h3{
+            padding-left: 95px;
+        }
+    }
+}
+
+//End page dự án
+
+//Start page contact
+.page-contact{
+    position: relative;
+    overflow: hidden;
+    background-image: url("assets/images/Contact-Info.jpg");
+
+    .background-icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 45%;
+    }
+
+    .content-contact{
+        position: relative;
+        padding: 0;
+        color: #fff;
+        line-height: 30px;
+
+        @include MQ(MD){
+            padding: 160px 0 95px 120px;
+        }
+
+        a{
+            color: #fff;
+        }
+
+        img{
+            padding-bottom: 60px;
+            max-width: 130px;
+
+            @include MQ(MD){
+                padding-bottom: 100px;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .content-contact__icon{
+        padding-left: 20px;
+    }
+
+    .content-contact__item{
+        padding-bottom: 20px;
+
+        @include MQ(MD){
+            padding-bottom: 75px;
+        }
+    }
+
+    .content-contact__left{
+        margin-left: 15px;
+        padding-right: 20px;
+        min-width: 80%;
+
+        @include MQ(MD){
+            margin-left: 65px;
+            padding-right: 90px;
+            min-width: 300px;
+        }
+    }
+
+    .content-contact__right{
+        padding-top: 20px;
+        padding-left: 15px;
+
+        @include MQ(MD){
+            padding-top: 0;
+            padding-left: 65px;
+        }
+    }
+}
+
+//Start page Dự án
+
+.page-du-an{
+    background-color: #f4f1ec; 
+    padding-bottom: 20px;
+    min-height: 100vh;
+    
+    h2{
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-transform:uppercase;
+        font-size: 25px;
+        text-align: center;
+
+        
+        @include MQ(MD){
+            padding-top: 120px;
+            padding-left: 210px;
+            font-size: 33px;
+            text-align: left;
+        }
+
+        @include MQ(XL){
+            padding-top: 80px;
+            padding-bottom: 40px;
+            font-size: 25px;
+        }
+
+        @include MQ(XXL){
+            padding-top: 120px;
+            padding-bottom: 80px;
+            font-size: 33px;
+        }
+    }
+    h3{
+        text-transform:uppercase;
+        padding-bottom: 20px;
+    }
+}
+
+.slider-items{
+    position: relative;
+}
+
+.slider-items__left{
+    width: 100%;
+    position: relative;
+
+    @include MQ(MD){
+        width: 60%;
+    }
+}
+.slider-items__right{
+    position: relative;
+    width: 100%;
+    left: auto;
+    padding: 30px 25px 0 25px;
+
+    @include MQ(MD){
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        padding: 0;
+    }
+}
+
+.slider-items__img{
+    position: relative;
+}
+
+.slide-items__small-img{
+    top: 5px;
+    width: 70%;
+    z-index: -1;
+    left: 7%;
+    position: absolute;
+
+    @include MQ(MD){
+        top: 20px;
+    }
+}
+
+.form-contact__list{
+    padding-bottom: 60px;
+}
+.slider-items__text-custom{
+    font-size: 16.5px;
+    position: relative;
+    padding-left: 60px;
+    padding-top: 10px;
+
+    @include MQ(XXL){
+        font-size: 22.5px;
+    }
+
+    &.home{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: $font__default;
+
+        @include MQ(MD){
+            font-size: 35px;
+        }
+
+        &::before{
+            width: 55px;
+            height: 55px;
+            background-image: url("assets/images/tick-yellow.png");
+        }
+    }
+
+    &::before{
+        content: '';
+        background-image: url("assets/images/tick.png");
+        position: absolute;
+        width: 45px;
+        height: 50px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+// Home page
+.home-page{
+    position: relative;
+    background-color: #ad1110;
+    background-repeat: no-repeat;
+    min-height: 110vh;
+
+    @include MQ(XXL){
+        background-image: url("assets/images/bg-home-page.jpg");
+    }
+}
+
+.form-contact{
+    position: relative;
+    top: auto;
+    color: #fff;
+    width: 100%;
+    left: auto;
+    right: auto;
+
+    @include MQ(XL){
+        top: 120px;
+        width: 490px;
+        left: 30%;
+    }
+
+    @include MQ(XXL){
+        position: absolute;
+        top: 230px;
+        right: 200px;
+        left: auto;
+    }
+
+    h2{
+        font-size: 29.5px;
+        text-transform: uppercase;
+    }
+
+    h6{
+        padding-bottom: 10px;
+    }
+}
+
+form{
+	overflow: hidden;
+}
+span.wpcf7-not-valid-tip{
+    font-size: 14px;
+}
+div.wpcf7-response-output{
+    font-size: 15px;
+}
+.wpcf7{
+	.wpcf7-text {
+		width: 100%;
+	    border: none;
+	    background: #cecece;
+	    padding: 0.8rem 2rem;
+	    color: #fff;
+        border: 1px solid #fff;
+        font-family: $font__default;
+		
+		@include MQ(MD){
+			background: transparent;
+		}
+	    &:focus{
+	    	outline:none;
+            border: 1px solid $color-brand-yellow;
+	    }
+	    &::placeholder{
+	    	color:#fff;
+	    	font-size: 1.8rem;
+	    }
+	}
+	.wpcf7-submit{
+		background: $color-brand-yellow;
+		border: none;
+		font-family: $font__main;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.07;
+		color: #060e21;
+		cursor: pointer;
+		text-transform: capitalize;
+        padding: 1.4rem 2rem;
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+
+		@include MQ(MD){
+			padding: 1.4rem 2rem;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+		&:hover{
+			background-color: $color__background-hr;
+		}
+	}
+}
+
+.hover-button{
+	animation-duration: 1.5s;
+  	animation-iteration-count: 1;
+}

@@ -1,0 +1,159 @@
+footer{
+	border-top: 1px solid $color__background-hr;
+}
+
+.widget-footer{
+	padding: 4rem 0;
+	width: 100%;
+	@include MQ(MD){
+		padding: 5rem 0 7rem;
+	}
+	@include MQ(LG){
+		padding: 13.2rem 0 7rem;
+	}
+}
+.footer-widget{
+	ul{
+		margin: 0 ;
+		padding: 0;
+		@include MQ(LG){
+			margin: 0 1.5rem;
+		}
+		li{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.textwidget{
+		.text-footer{
+			margin-top: 3rem;
+			padding-right: 0;
+			@include MQ(LG){
+				padding-right: 35%;
+			}
+		}
+		.social{
+			margin-top: 2rem;
+			@include MQ(LG){
+				margin-top: 6rem;
+			}
+			li{
+				float: left;
+				padding: 0 1rem;
+				&:first-child{
+					padding-left: 0;
+				}
+				i{
+					border-radius: 100%;
+					width: 3rem;
+					height: 3rem;
+					text-align: center;
+					line-height: 3rem;
+					color: #fff;
+					@include transition(all 0.3s ease-in-out 0s);
+					&:hover{
+						opacity: 0.6;
+					}
+					&.fa-facebook{
+						background: #3B5998;
+					}
+					&.fa-twitter{
+						background: #26A6D1;
+					}
+					&.fa-youtube{
+						background: #C4302B;
+					}
+					&.fa-google-plus{
+						background: #DD4B39;
+					}
+				}
+			}
+		}
+	}
+	.menu-footer-custom{
+		float: left;
+		width: 100%;
+		padding:0;
+		margin:0;
+		@include MQ(LG){
+			width: 40%;
+		}
+		a{
+			color: $color__text-main;
+			&:hover{
+				color: $color__text-titlevideo;
+			}
+		}
+	}
+	.contact-footer{
+		padding-right: 0;
+		@include MQ(LG){
+			padding-right: 30%;
+		}
+	}
+	.address{
+		margin-top: 1rem;
+		color: $color__background-button;
+	}
+	.title-widget{
+		padding-top: 5rem;
+	}
+}
+
+//Style default widget
+.title-widget{
+	color: $color__text-titlevideo;
+	font-size: 3rem;
+	line-height: 4rem;
+	margin-bottom: 3rem;
+}
+
+//back to top
+.back-to-top {
+  	position: relative;
+  	z-index:999;
+  	float: right;
+   	top: -30px;
+  	&:hover {
+        background-color: $color__background-hr;
+        &:before{
+            background: $color__text-menu;
+        }
+    }
+  	&:before{
+	    content: '\f106';
+	    font-family: FontAwesome;
+	    position: absolute;
+	    width: 25px;
+	    height: 25px;
+	    right: 0;
+	    top: 0;
+	    text-align: center;
+	    line-height: 23px;
+	    font-size: 1em;
+	    color: #ffffff;
+	    border-radius: 20px;
+	    background: $color__background-hr;
+	    color: $color__text-button;
+	    @include transition(all 0.3s ease-in-out 0s);
+  	}
+  	.text-active{
+	    color: $color__background-hr;
+	    *{
+	        color: $color__background-hr;
+	    }
+  	}
+}
+
+.copyright{
+	text-align: center;
+	padding: 4rem 0;
+    border-top: 1px dashed $color__background-hr;
+}
+
+.home{
+	footer{
+		background: $color__background-section3;
+	}
+}
