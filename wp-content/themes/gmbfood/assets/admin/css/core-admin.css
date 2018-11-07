@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'yoga';
+    src:
+    url('../../fonts/yoga.ttf?2eje1f') format('truetype'),
+    url('../../fonts/yoga.woff?2eje1f') format('woff'),
+    url('../../fonts/yoga.svg?2eje1f#yoga') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.dashicons-yogalogo:before {
+    content: "\e926";
+    font-family: 'yoga' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.about_wrap p{
+    font-size: 14px;
+}
+.about-text{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.yoga-logo{
+    margin-bottom: 20px;
+}
+.about-text, .yoga-version{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.row{
+    display: flex;
+    width:100%;
+}
+.feature_step{
+    display: flex-inline;
+    flex-direction: row;
+    width: 28%;
+    padding: 40px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+.feature_step.last{
+    padding-right: 0px;
+}
+
+.yoga-focus{
+    /*width: 90%;*/
+    display: inline-block;
+    background: #fff;
+    margin-bottom: 30px;
+}
+/*.clearfix{
+    width: 100%;
+    clear: both;
+    float: left;
+    display: inline-block;
+}
+*/
+
+/*Admin screen*/
+.yoga-form-container{
+    padding: 50px;
+}
+
+#yoga_register--form{
+    float: left;
+    /*width: 90%;*/
+}
+
+#yoga_register--form input{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#yoga_register--form input[type="text"]{
+    width:250px;
+    height: 30px;
+    padding:5px;
+    margin-right: 30px;
+}
+.yoga-loader{
+    display: inline-block;
+}
+
+/** Support tab */
+.to-register{
+    float: left;
+    width: 90%;
+    margin-top: 20px;
+    display: block;
+    padding:25px;
+}
+.support-feature{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    margin-left: 5px;
+}
+.support-feature h3 .dashicons{
+   margin-right: 10px;
+}
+
+
+/**
+ * Install demo
+ */
+
+.yoga-demo-themes{
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.yoga-demo-themes .theme-item{
+    float: left;
+    width: 30%;
+    margin-right:3%;
+}
+.theme-item img{
+    width:100%;
+    height: auto;
+}
+.yoga-theme-name{
+     text-transform: capitalize;
+}
+.yoga-theme-name:nth-child(3n){
+    margin-right:0px;
+}
+
+/**
+ * Install plugin
+ */
+
+.yoga-plugins-list{
+    padding-top: 30px;
+}

@@ -1,0 +1,38 @@
+.yoga-logo{
+    // float: left;
+    //margin-top: 30px;
+    width: auto;
+    height: auto;
+    display: none;
+    text-align: left;
+    @include MQ(MD){
+        display: block;
+    }
+}
+.logo-mobile{
+    padding: 10px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    @include MQ(MD){
+        display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+.header_fixed_logo {
+    display: none;
+}
+
+.sticky-header{
+    .main_logo, .logo-mobile{
+        display: none;
+    }
+    .header_fixed_logo {
+        display: block;
+        padding: 1rem 0;
+    }
+}

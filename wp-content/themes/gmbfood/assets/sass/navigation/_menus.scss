@@ -1,0 +1,228 @@
+header{
+	margin-bottom: 0;
+	@include MQ(MD){
+	margin-bottom: 2rem;
+	}
+	.header-defaut{
+		padding-top: 4rem;
+		position: absolute;
+		z-index: 99999;
+		top: 0;
+
+		@include MQ(MD){
+			top: auto;
+			z-index: auto;
+			position: relative;
+		}
+	}
+}
+
+.right-menu{
+	.header-menu__search{
+		float: right;
+		i{
+			font-size: 2rem;
+			padding: 0 3rem;
+			line-height: 2.2rem;
+			border-left: 1px solid $color__background-section2;
+			cursor: pointer;
+			color: $color__text-menu;
+		}
+	}
+	.button-header{
+		float: right;
+		display: none;
+		@include MQ(MD){
+			display: block;
+		}
+		a{
+			background: $color__background-button;
+			color: $color__text-button;
+			padding: 1rem 1.8rem;
+			font-size: 1.8rem;
+			line-height: 1.5rem;
+			@include transition(all 0.3s ease-in-out 0s);
+			font-weight: 300;
+			@include MQ(LG){
+				padding: 0.7rem 2.9rem;
+			}
+			
+			&:nth-child(1){
+				background: #ef404a;
+				&:hover{
+					background: $color__text-menu;
+				}
+			}
+			&:nth-child(2){
+				background: #3ec2cf;
+				&:hover{
+					background: $color__text-menu;
+				}
+			}
+		}
+	}
+}
+
+.main-navigation {
+	float: left;
+	margin-top: -0.5rem;
+	display: none;
+	border: none;
+	@include MQ(XL){
+		display: block;
+	}
+	.dropdown-toggle::after{
+		display: none;
+	}
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		border: none;
+
+		ul {
+			float: left;
+			position: absolute;
+			top: 2em;
+			left: -999em;
+			z-index: 99999;
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+				
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+
+	li {
+		float: left;
+		position: relative;
+		padding: 0;
+		font-family: $font__main;
+		clear: both;
+
+		@include MQ(L){
+			padding: 0 2.5rem;
+		}
+		&.menu-item.active > a{
+			border-bottom: 1px solid $color__background-button;
+			background: transparent;
+		}
+
+		&:hover > a,
+		&.focus > a {
+			color: $color__background-button;
+			background: transparent;
+		}
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: $color__text-menu;
+		font-size: 1.3rem;
+		padding-top: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+
+		@include MQ(XXL){
+			font-size: 1.6rem;
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+.navbar{
+	display: block!important;
+	width: 70%;
+	padding:0;
+	float:right;
+	top: -15px;
+	@include MQ(MD){
+		width: 10%;
+	}
+	@include MQ(XL){
+		display: none!important;
+	}
+	.navbar-toggler{
+		font-size: 3.25rem;
+		padding:0;
+	}
+}
+
+//Custom timetable
+.wcs-filter-toggler-container{
+	text-align: center;
+	margin-bottom: 4rem;
+}

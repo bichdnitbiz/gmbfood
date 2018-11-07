@@ -1,0 +1,102 @@
+.banner-wrapper{
+	text-align: center;
+	background: $color__background-section3;
+	padding: 0;
+	@include MQ(XXL){
+		padding:0 29%;
+	}
+	&.contact{
+		padding: 0 20%;
+	}
+	.banner-inner{
+		padding:50px 0px;
+		@include MQ(SM) {
+			padding:130px 0px 216px 0px;
+		}
+		.banner-desc{
+			padding-bottom: 65px;
+			span{
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+				text-align: center;
+				color:$color__text-desc;
+			}
+		}
+		.banner-day{
+			h2{
+				font-family: $font__default;
+				font-size: 12rem;
+				font-weight: 100;
+				line-height: 0.6;
+				color: $color__text-desc;
+				padding-bottom: 50px;
+				@include MQ(SM){
+					font-size: 20rem;
+				}
+			}
+			&:after{
+				content: "DAY";
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				color: #00c27b;
+				line-height: 1.33;
+				font-weight: 100;
+				top: -10%;
+				right: 15%;
+				font-size: 2rem;
+				@include MQ(SM){
+					right: 25%;
+				}
+				@include MQ(MD){
+					right: 30%;
+				}
+				@include MQ(LG){
+					right: 35%;
+				}
+				@include MQ(XXL){
+					right: 25%;
+				}
+				
+			}
+
+		}
+		
+		.banner-title{
+			h2{
+				font-family: $font__main;
+				font-size: 3rem;
+				line-height: 1.07;
+				text-align: center;
+				color: $color__text-title;
+				padding-bottom: 60px;
+				@include MQ(SM){
+					font-size: 3.5rem;
+				}
+				@include MQ(MD){
+					font-size: 4.5rem;
+				}
+				@include MQ(LG){
+					font-size: 7.5rem;
+					padding-bottom: 90px;
+				}
+			}
+
+		}
+		.btn-banner{
+			.elementor-button{
+				padding:18px 40px;
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+				text-align: center;
+				color: #ffffff;
+				border-radius: 100px 100px;
+				background: $color__background-button;
+			}
+		}
+	}
+}

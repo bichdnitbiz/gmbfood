@@ -1,0 +1,45 @@
+#search-popup{
+    background: $color__background-button;
+    // z-index: 10;
+    .btn-default{
+        background: transparent;
+        border: none;
+        color: $color__background-body;
+        text-transform: uppercase;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .modal-content{
+        background: transparent;
+        .modal-body{
+            height: 100vh;
+            padding: 0;
+        }
+        .content-search{
+            position: absolute;
+            top: 40%;
+            width: 100%;
+        }
+        input{
+            background: transparent;
+            color: $color__background-body;
+            border: none;
+            line-height: 48px;
+            padding-left: 15px;
+            min-height: 90px;
+            font-size: 4.2rem;
+            // @media only screen and (min-width: 1400px){
+            //     @include font-size(72px);
+            // }
+        }
+        h4{
+            color: $color__background-body;
+            font-size: 1.4rem;
+            line-height: 36px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,211 @@
+.detail-video__title{
+	margin:0 auto;
+	padding: 0 28%;
+	font-family: $font__main;
+	font-size: 7.5rem;
+	line-height: 1.07;
+	text-align: center;
+	color: $color__text-title;
+	margin-bottom: 40px;
+	&:before{
+		content:"";
+		background: url("assets/admin/images/tree2.png");
+		width: 16rem;
+		height: 16rem;
+		position: absolute;
+		top: -15%;
+		left: 45%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.detail-video__content{
+	position: relative;
+    top: -6rem;
+    @include MQ(MD){
+    	top: -12.7rem;
+    }
+}
+.detail-video__embed-container{
+	position: relative;
+	width: 100%;
+	height: 30rem;
+	overflow: hidden;
+	@include MQ(MD){
+		height: 77.5rem;
+	}
+	iframe{
+		display: block;
+		padding-bottom: 11.1rem;
+		z-index: 0;
+   		 position: relative;
+	}
+}
+.detail-video__backgroundvideo{
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+	}
+}
+.click_play{
+	position: absolute;
+    @include center(xy);
+}
+.detail-video__infor{
+	text-align: center;
+	padding-bottom: 10rem;
+	width: 100%;
+	@include MQ(MD){
+		padding-bottom: 22.7rem;
+	}
+}
+.detail-video__author,
+.detail-video__time{
+	font-family: $font__main;
+	font-size: 1.8rem;
+	line-height: 1.56;
+	color: $color__text-date;
+}
+.detail-video__blockcontent{
+	background-color: $color__background-section3;
+	.row-content{
+		padding-bottom:60px;
+		@include MQ(MD){
+			padding-bottom:13.6rem;
+		}
+	}
+}
+.detail-video__left {
+	text-align: left;
+	width: 100%;
+	padding:0 15px ;
+	border-right:none;
+	@include MQ(MD){
+		width: 60%;
+		padding:0px 1rem ;
+		border-right:1px solid $color__background-hr;
+	}
+	@include MQ(LG){
+		width: 60%;
+		padding:0px 75px 0px 92px ;
+		border-right:1px solid $color__background-hr;
+	}
+	p{
+		font-family:  $font__main;
+		font-size: 1.8rem;
+		line-height: 1.56;
+		color: $color__text-main;
+		padding-bottom: 70px;
+	}
+	.rating {
+		display: inline-block;
+		padding-bottom: 10px;
+	}
+	
+}
+.detail-video__desc{
+		font-family: $font__default;
+		font-size: 1.4rem;
+		font-weight: 300;
+		line-height: 1.07;
+		color: $color__text-desc;
+	}
+.detail-video__description{
+	font-family: $font__main;
+	font-size: 3rem;
+	line-height: 1.33;
+	color: $color__text-title;
+	padding: 15px 0px 30px 0px;
+}
+.colum_detail__left{
+	.colum_detail__title{
+		h2{
+			font-family: $font__main;
+			font-size: 2.4rem;
+			line-height: 1.46;
+			color: $color__text-title;
+			padding-bottom: 10px;
+		}
+	}
+	.colum_detail__content{
+		p{
+			font-family: $font__main;
+			font-size: 1.5rem;
+			line-height: 1.67;
+			color: $color__text-main;
+		}
+	}
+}
+.detail-video__right{
+	width: 100%;
+	text-align: left;
+	@include MQ(MD){
+		width: 40%;
+	}
+}
+.detail-video__view,
+.detail-video__vote{
+	padding: 0 15px;
+	border-bottom: none;
+	@include MQ(MD){
+		padding: 0px 0px 60px 75px;
+		border-bottom: 1px solid $color__background-hr;
+	}	
+		span{
+			font-family: $font__default;
+			font-size: 1.4rem;
+			font-weight: 300;
+			line-height: 1.07;
+			color: $color__text-desc;
+			margin-bottom: 60px;
+
+		}
+	}
+.detail-video__numberview,
+.detail-video__numbervote{
+		font-family: $font__main;
+		font-size: 7.5rem;
+		line-height: 1.07;
+		color: $color__text-title;
+}
+.detail-video__numbervote{
+	padding-top: 45px;
+}
+.detail-video__related{
+	position: relative;
+	padding-top: 30px;
+	@include MQ(MD){
+		padding-top: 0;
+	}
+}
+.detail-video__related-tile{
+	padding: 3rem 15px;
+	margin:0;
+	font-family: $font__main;
+	font-size: 2.8rem;
+	line-height: 3rem;
+	color: $color__text-title;
+	@include MQ(MD){
+		padding: 9rem 0 0px 6.5rem;
+		font-size: 3.8rem;
+		line-height: 4rem;
+	}
+	@include MQ(XL){
+		padding: 11.7rem 8rem 7.5rem;
+		font-size: 4.8rem;
+		line-height: 5.5rem;
+	}
+	&:before{
+		content:"";
+		background: url("assets/admin/images/tree2.png");
+		background-repeat: no-repeat;
+		width: 16rem;
+		height: 21rem;
+	    position: absolute;
+	    top: 30%;
+	    left: 15%;
+	}
+}

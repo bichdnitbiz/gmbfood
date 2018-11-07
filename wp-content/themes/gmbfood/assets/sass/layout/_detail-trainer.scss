@@ -1,0 +1,303 @@
+.video-content{
+	.video{
+		padding-bottom: 6.5rem;
+	}
+	.video-tile{
+		padding:0 15px;
+		text-align: center;
+		@include MQ(MD){
+			padding:0 27%;
+		}
+		h2{
+			font-family: $font__main;
+			font-size: 2.8rem;
+			line-height: 1.15;
+			text-align: center;
+			color: $color__text-title;
+			padding-bottom: 2.5rem;
+			@include MQ(MD){
+				font-size: 3.8rem;
+			}
+			@include MQ(LG){
+				font-size: 4.8rem;
+			}
+		}
+	}
+	.video-by{
+		display:block;
+		text-align: center;
+		padding-bottom: 5rem;
+		@include MQ(MD){
+			padding-bottom: 10rem;
+		}
+		@include MQ(LG){
+			padding-bottom: 15rem;
+		}
+		@include MQ(XL){
+			padding-bottom: 21rem;
+		}
+		span{
+			font-family: $font__main;
+			font-size: 1.5rem;
+			line-height: 1.67;
+			color: $color___text-author;
+		}
+	}
+}
+.trainer-dt{
+	.fa-play-circle:before{
+		color:#746db5;
+	}
+}
+.trainer-dt__numberclass{
+		padding:0;
+		text-align: center;
+		padding-bottom: 4rem;
+		border-bottom: 1px solid #d1ebe8;
+		font-size: 3rem;
+		@include MQ(MD){
+			padding:0 12.7%;
+			padding-bottom: 8rem;
+		}
+		.teacher{
+			font-family: $font__main;
+			line-height: 1.33;
+			color: #000000;
+		}
+		.number{
+			font-family: $font__main;
+			font-size: 3.8rem;
+			line-height: 1.15;
+			color: $color__text-author;
+			@include MQ(MD){
+				font-size: 4.8rem;
+			}
+		}
+		.info{
+			font-family: $font__main;
+			line-height: 1.33;
+			color: $color__text-desc;
+		}
+}
+.trainer-dt__left{
+	padding:0;
+	margin-bottom: 2rem;
+	@include MQ(MD){
+		padding:16.5rem 0 0 0;
+	}
+}
+.trainer-dt__title{
+	font-size: 3.4rem;
+	line-height: 1.09;
+	font-family: $font__main;
+	color: $color__text-title;
+	@include MQ(MD){
+		font-size: 4.4rem;
+	}
+	@include MQ(LG){
+		font-size: 5.4rem;
+	}
+	@include MQ(XL){
+		font-size: 6.4rem;
+	}
+	&:before{
+		content:"";
+		background: url("assets/admin/images/tree2.png");
+		background-repeat: no-repeat;
+		width: 16rem;
+		height: 15rem;
+		position: absolute;
+		top: 15%;
+		left: 4%;
+		background-size: contain;
+	}
+}
+.trainer-dt__job{
+	padding: 0;
+	li{
+		display: inline-block;
+		float: left;
+		font-family: $font__default;
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 0.83;
+		color: $color__text-desc;
+		border-right: 1px solid  $color__text-desc;
+		padding:0 1rem;
+		&:last-child{
+			border-right: none;
+		}
+		&:first-child{
+			padding:0;
+			@include MQ(MD){
+				padding:0 1rem;
+			}
+		}
+	}
+}
+.trainer-dt__subcontent{
+	font-family: $font__main;
+	padding: 3.6rem 0 0 0rem;
+	font-size: 1.8rem;
+	line-height: 1.56;
+	color: $color__text-main;
+	@include MQ(XL){
+		padding: 3.6rem 15rem 4.3rem 8.3rem;
+	}
+	ul{
+		padding: 0 15px;
+		margin:0;
+		@include MQ(MD){
+			padding: 4.3rem 0  0 8.3rem;
+		}
+		li{
+			font-family: $font__main;
+			font-size: 1.5rem;
+			line-height: 1.67;
+			color: $color__link-page;
+		}
+	}
+}
+.trainer-dt__right{
+	.back-trainer{
+		padding-bottom: 4.5rem;
+		text-align: right;
+		a{
+			font-family: $font__default;
+			font-size: 1.4rem;
+			font-weight: 300;
+			line-height: 1.07;
+			text-align: right;
+			color: $color__text-desc;
+			text-decoration: none;
+		}
+	}
+}
+.trainer-dt__center{
+	display: inherit;
+}
+.trainer-dt__content{
+	font-family: $font__main;
+	display: inline-block;
+	font-size: 1.8rem;
+	line-height: 1.56;
+	color: $color__text-main;
+	padding: 0 15px;
+	@include MQ(XL){
+		padding: 0 20%;
+	}
+}
+.trainer-dt__website{
+	font-family: $font__main;
+	font-size: 1.8rem;
+	line-height: 28px;
+	padding: 2rem 0 5rem 0;
+	color: $color__text-desc;
+	@include MQ(MD){
+		padding: 6rem 0 11rem 0;
+	}
+}
+.trainer-dt__block{
+	position: relative;
+	padding-top: 5rem;
+	@include MQ(MD){
+		padding-top: 7rem;
+	}
+	@include MQ(LG){
+		padding-top: 9rem;
+	}
+	@include MQ(XL){
+		padding-top: 11rem;
+	}
+	.tags-share__share{
+		padding: 0 15px;
+		@include MQ(XL){
+			padding: 0;
+		}
+	}
+}
+.trainer-dt__fllow{
+    position: absolute;
+    @include transform (rotate(90deg));
+    width: 10rem;
+    top: 20%;
+    right: -130%;   
+    font-family: $font__default ;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.07;
+    text-align: right;
+    color: $color__text-desc;
+}
+
+.trainer-dt__related{
+ 	padding-bottom:10rem;
+ 	@include MQ(MD){
+ 		padding-bottom:15rem;
+ 	}
+ 	@include MQ(LG){
+ 		padding-bottom:20rem;
+ 	}
+ 	@include MQ(XL){
+ 		padding-bottom:26rem;
+ 	}
+	h3{
+		font-family:  $font__main;
+		font-size: 3.4rem;
+		line-height: 1.09;
+		color: $color__text-title;
+		margin:0 0 3rem 0;
+		@include MQ(MD){
+			font-size: 4.4rem;
+		}
+		@include MQ(LG){
+			font-size: 5.4rem;
+		}
+		@include MQ(XL){
+			font-size: 6.4rem;
+			margin: 0 0 8rem 0;
+		}
+	}
+
+}
+.trainer-dt__recent-video{
+	margin:0;
+	padding-left: 0;
+	li{
+		display: block;
+		float: left;
+		min-height: 37rem;
+		@include MQ(MD){
+			min-height: 47rem;
+		}
+		.trainer-dt__img{
+			padding-bottom: 3.5rem;
+			a{display: block;}
+		}
+		.trainer-dt__info-video{
+			text-align: left;
+			.trainer-dt__author{
+				font-family: $font__default;
+				font-size: 1.4rem;
+				font-weight: 300;
+				line-height: 1.07;
+				color: $color__text-desc;
+			}
+			.trainer-dt__title-video{
+				font-family: $font__main;
+				font-size: 3.6rem;
+				line-height: 1.28;
+				a{
+					color:$color__text-title;
+					text-decoration: none;
+				}
+			}
+			.trainer-dt__time-video{
+				font-family: $font__main;
+				font-size: 1.5rem;
+				line-height: 1.67;
+				color: $color__text-date;
+			}
+		}
+	}
+}

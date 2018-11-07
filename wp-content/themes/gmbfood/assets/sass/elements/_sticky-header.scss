@@ -1,0 +1,22 @@
+.sticky-header{
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	top: -150px;
+	@include transition(all 0.3s ease-in-out);
+	display: none;
+	@include MQ(XL){
+		display: block;
+	}
+	.header-defaut{
+		background: #4ae7dc;
+		width: 100%;
+		margin: 0;
+		.right-menu{
+			padding: 2.5rem 0 5rem;
+		}
+	}
+	&.header__visible{
+		top: 0px;
+	}
+}

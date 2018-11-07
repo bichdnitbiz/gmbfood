@@ -1,0 +1,51 @@
+/*
+Page 404 CSS
+ */
+.section-404 {
+  text-align: center;
+  padding: 5rem 0 10rem;
+  height: 100vh;
+  background: url("assets/images/bg-event.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  &:before{
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.box-text404{
+  margin-top: 25vh;
+}
+.box-text404 .title-box404 {
+  font-size: 7rem;
+  margin-top: 5rem;
+  font-weight: 700;
+  line-height: 15rem;
+}
+.box-text404 .text-404 {
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+}
+.text-info__aboutus-top {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+//Search form
+.not-found{
+  .title-post{
+      font-size: 3rem;
+      @include MQ(MD){
+        font-size: 4rem;
+      }
+  }
+  .page-content{
+      padding-bottom: 10vh;
+  }
+}

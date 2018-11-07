@@ -1,0 +1,319 @@
+/* line 3, ../scss/redux/_redux.scss */
+.redux-main .wp-picker-container .wp-color-result {
+  border-radius: 0;
+  height: 31px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+/* line 8, ../scss/redux/_redux.scss */
+.redux-main .wp-picker-container .wp-color-result:after {
+  line-height: 29px;
+}
+/* line 12, ../scss/redux/_redux.scss */
+.redux-main .wp-picker-container .wp-picker-input-wrap {
+  margin: 0 3px;
+}
+/* line 14, ../scss/redux/_redux.scss */
+.redux-main .wp-picker-container .wp-picker-input-wrap input {
+  height: 31px;
+}
+/* line 18, ../scss/redux/_redux.scss */
+.redux-main .wp-picker-container .iris-picker .iris-square, .redux-main .wp-picker-container .iris-picker .iris-slider, .redux-main .wp-picker-container .iris-picker .iris-square-inner, .redux-main .wp-picker-container .iris-picker .iris-palette {
+  border-radius: 0;
+}
+
+/* line 23, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main input:not(.button-primary), .redux-container #redux-form-wrapper .redux-main .select2-choice, .redux-container #redux-form-wrapper .redux-main .select2-drop, .redux-container #redux-form-wrapper .redux-main textarea {
+  background: #f4f2f2 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+/* line 29, ../scss/redux/_redux.scss */
+.redux-sidebar .redux-group-menu li a {
+  padding: 8px 4px 8px 20px;
+  font-weight: 400;
+}
+/* line 34, ../scss/redux/_redux.scss */
+.redux-sidebar .redux-group-menu ul.subsection li a {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  font-weight: 400;
+}
+
+/* line 44, ../scss/redux/_redux.scss */
+.redux-container .redux-main .input-append .add-on, .redux-container .redux-main .input-prepend .add-on {
+  border-radius: 0;
+  box-shadow: none;
+}
+/* line 52, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .form-table th {
+  width: 50% !important;
+}
+/* line 55, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-group-tab {
+  position: relative;
+  padding: 0 30px;
+}
+/* line 58, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-group-tab h2 {
+  margin: 3em 0 2em;
+  padding: 8px 15px;
+  background-color: #f4f2f2;
+  line-height: 1.5;
+}
+/* line 68, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-container-switch .cb-disable span, .redux-container #redux-form-wrapper .redux-container-switch .cb-enable span {
+  font-weight: normal;
+}
+/* line 73, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-container-switch .cb-disable.selected {
+  background: black !important;
+}
+/* line 80, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .select2-container-multi .select2-choices {
+  background-color: #f4f2f2 !important;
+  background-image: inherit;
+}
+/* line 83, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .select2-container-multi .select2-choices .select2-search-choice {
+  line-height: 1.1rem;
+  background-color: initial !important;
+  border-radius: 0;
+  background-image: initial;
+}
+/* line 94, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-container-sorter ul {
+  background: none;
+  border: none;
+}
+/* line 97, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-container-sorter ul h3 {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+/* line 101, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-container-sorter ul li {
+  border-radius: 0;
+  height: 30px;
+  line-height: 30px !important;
+  background: #f4f2f2 !important;
+}
+/* line 112, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-container-spinner .ui-widget .ui-spinner-button {
+  border-radius: 0;
+}
+/* line 114, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-container-spinner .ui-widget .ui-spinner-button [class*="ui-"] {
+  border-radius: 0;
+}
+/* line 122, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-typography-container .select_wrapper {
+  max-width: calc(50% - 10px) !important;
+  min-width: 160px !important;
+  height: 67px;
+}
+/* line 128, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-typography-container .select2-container .select2-choice {
+  border-radius: 0;
+}
+/* line 133, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-main .redux-typography-container .input_wrapper input.mini {
+  border-radius: 0;
+}
+/* line 140, ../scss/redux/_redux.scss */
+.redux-container #redux-footer {
+  right: inherit !important;
+}
+
+/* line 145, ../scss/redux/_redux.scss */
+.redux-container-slider .redux-slider-input {
+  margin-right: 25px;
+}
+/* line 148, ../scss/redux/_redux.scss */
+.redux-container-slider .redux-slider-label {
+  margin-left: 0;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 154, ../scss/redux/_redux.scss */
+.redux-container-slider .redux-slider-container {
+  margin: 10px 0 10px 0;
+  width: calc(100% - 130px);
+}
+/* line 158, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-target {
+  border-radius: 0 !important;
+  box-shadow: none;
+  border: none;
+}
+/* line 162, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-target.noUi-origin {
+  top: -2px;
+  background-color: initial !important;
+}
+/* line 166, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-target.noUi-connect {
+  background-color: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none;
+  border: none;
+  border-top: 2px solid #00a0d2;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  position: relative;
+  top: 6px;
+  border-top-color: #00a0d2;
+}
+/* line 185, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-handle {
+  border: none !important;
+  background-color: #00a0d2 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  left: -10px;
+  top: -5px;
+  cursor: ew-resize;
+  border-radius: 100%;
+  transition: all 0.2s ease-out;
+}
+/* line 198, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-handle.noUi-active {
+  -webkit-transform: scale3d(2.5, 2.5, 1);
+  transform: scale3d(2.5, 2.5, 1);
+}
+/* line 203, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-origin {
+  margin: 0;
+  border-radius: 0;
+  height: 2px;
+  background: #c8c8c8;
+}
+/* line 208, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-origin.noUi-background {
+  top: -2px;
+}
+/* line 212, ../scss/redux/_redux.scss */
+.redux-container-slider .noUi-handle:before, .redux-container-slider .noUi-handle:after {
+  content: none;
+}
+
+/* line 260, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-sidebar .redux-group-menu > li.activeChild.hasSubSections > a {
+  background-color: #0073aa;
+  color: #fff;
+}
+/* line 265, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-sidebar .redux-group-menu > li.activeChild.hasSubSections ul.subsection li a {
+  background-color: #32373c;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 270, ../scss/redux/_redux.scss */
+.redux-container #redux-form-wrapper .redux-sidebar .redux-group-menu > li.activeChild.hasSubSections ul.subsection li.active a {
+  background-color: #32373c;
+  color: #fff;
+}
+
+/* line 278, ../scss/redux/_redux.scss */
+.redux-container-color_alpha .iris-picker .iris-strip .ui-slider-handle {
+  width: 16px;
+}
+
+/* line 1, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-container {
+  /*    border: solid 1px black;
+      -webkit-box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);
+      box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, 0.5), 0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, 0.8);*/
+  color: #555;
+  border-color: #cccccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: top;
+}
+
+/* line 13, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-replacer {
+  color: #555;
+  border-color: #cccccc;
+  background: #f7f7f7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: top;
+}
+
+/* line 22, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-replacer:focus,
+.sp-replacer:hover,
+.sp-replacer.focus,
+.sp-replacer.hover {
+  background: #fafafa;
+  border-color: #999;
+  color: #222;
+}
+
+/* line 31, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-replacer:focus,
+.sp-replacer.focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 40, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-replacer.active:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 47, ../scss/redux/fields/_field_color_rgba.scss */
+.sp-replacer.active,
+.sp-replacer.active:hover,
+.sp-replacer:active {
+  background: #eee;
+  border-color: #999;
+  color: #333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 1, ../scss/redux/fields/_field_button_set.scss */
+.redux-container #redux-form-wrapper .redux-container-switch .cb-disable, .redux-container #redux-form-wrapper .redux-container-switch .cb-enable, .redux-container .ui-button, .control-section-redux .ui-button, .control-panel-redux .ui-button, .redux-metabox .ui-button, .admin-color-fresh .redux-container-switch .cb-enable.selected, .admin-color-fresh .redux-field-container .ui-buttonset .ui-state-active, .wp-customizer .redux-container-switch .cb-enable.selected, .wp-customizer .redux-field-container .ui-buttonset .ui-state-active {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* line 10, ../scss/redux/fields/_field_button_set.scss */
+.admin-color-fresh .redux-container-switch .cb-enable.selected, .admin-color-fresh .redux-field-container .ui-buttonset .ui-state-active, .wp-customizer .redux-container-switch .cb-enable.selected, .wp-customizer .redux-field-container .ui-buttonset .ui-state-active {
+  background-color: #00a0d2 !important;
+  background-image: none !important;
+  border-color: transparent !important;
+}
+
+/* line 4, ../scss/style.min.scss */
+.redux-container #redux-form-wrapper .redux-sidebar-head .redux-logo {
+  background-image: url(../images/beau-core.png);
+}
+
+/* line 7, ../scss/style.min.scss */
+.about-wrap .about-description, .about-wrap .about-text {
+  margin-top: 1.4em;
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 19px;
+}
+
+/* line 13, ../scss/style.min.scss */
+.beau-thanks {
+  float: left;
+  width: 100%;
+}

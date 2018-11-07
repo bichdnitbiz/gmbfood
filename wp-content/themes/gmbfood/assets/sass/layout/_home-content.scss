@@ -1,0 +1,700 @@
+.elementor-widget:not(:last-child) {
+	margin-bottom: 0px !important;
+}
+.elementor-element-populated{
+	padding: 0 !important;
+}
+.link-a, .link-a a {
+	.elementor-widget-container{
+		color: $color__link-page-hover!important;
+		&:hover{
+			color: $color__background-button!important;
+		}
+	}
+}
+.vertical-viewmore{
+	position: absolute !important;
+	font-size: 1.4rem;
+	top: 45%;
+	color:#00c27b;
+	display: none;
+	@include transition(all 0.3s ease-in-out);
+	left: auto;
+	@include transform(rotate(90deg));
+	@include MQ(XXL){
+		display: block;
+	}
+	// @include MQ(XL){
+	// 	position: relative !important;
+	// 	display: block;
+	// 	left: -60px;
+	// 	transform: unset;
+	// 	top: 0;
+	// }
+	// @include MQ(XXL){
+	// 	position: absolute !important;
+	// 	display: block;
+	// 	left: auto;
+	// 	@include transform(rotate(90deg));
+	// }
+	// 
+	&.text-about{
+		top: 52%;
+	}
+	span{
+		font-family: $font__default !important; 
+		padding: 38px 0px;
+		font-size: 1.4rem;
+		font-weight: 300;
+		line-height: 1.07;
+		text-align: right;
+		cursor: pointer;
+	}
+	.elementor-widget-container{
+		&:after{
+			content: "\f175";
+			font: normal normal normal 16px/1 FontAwesome;
+			@include transform(rotate(-90deg));
+			position: absolute;
+			bottom: 0;
+			right: -30%;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+}
+
+.horizontal-viewmore{
+	&.elementor-widget-heading{
+		padding: 0 15px 30px 15px;
+		@include MQ(XL){
+			padding:0 0 15.2rem 0;
+		}
+		.elementor-heading-title{
+			font-family: $font__default;
+			font-size: 1.4rem;
+			font-weight: 300;
+			line-height: 15px;
+			text-align: right;
+			cursor: pointer;
+			&:after{
+				content: "\f178";
+				font: normal normal normal 14px/1 FontAwesome;
+				padding-left: 10px;
+				@include transition(all 0.3s ease-in-out);
+			}
+		}
+	}
+}
+.about-center{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+	@include MQ(XL){
+		margin-bottom: 41.2rem;
+		width: 50%
+	}
+	
+	.about-center__title{
+		h2{
+			color:$color__text-title;
+			font-size: 2.5rem;
+			font-family: $font__main;
+			margin: 0 auto;
+			line-height: 1.07;
+			padding: 0 15px;
+
+			@include MQ(SM){
+				font-size:3.5rem;
+			}
+			@include MQ(MD){
+				font-size: 4.5rem;
+			}
+			@include MQ(LG){
+				font-size: 5.5rem;
+			}
+			@include MQ(XL){
+				font-size: 7.5rem;
+			}
+		}
+
+	}
+	.about-center__desc{
+		h2{
+			color: $color__text-subtitle;
+			font-size: 2rem;
+			line-height: 1.33;
+			padding: 40px 15px;
+			font-family: $font__main;
+			@include MQ(XL){
+				padding:64px 0px 41px 91px ;
+				font-size: 3rem;
+			}
+		}
+
+	}
+
+	.about-center__content{
+		padding: 0 15px;
+
+		@include MQ(XL){
+			padding-left: 91px;
+		}
+
+		.about-center__contentleft, .about-center__contentright{
+			p{
+				margin: 0;
+				font-size: 1.5rem;
+				text-align: justify;
+				color: $color__text-main;
+				line-height: 1.56;
+				font-family: $font__main;
+				@include MQ(XL){
+					font-size: 1.5rem;
+				}
+			}
+
+		}
+		.about-center__contentright{
+			p{
+				@include MQ(MD){
+					padding-left: 45px;
+				}
+			}
+		}
+	}
+}
+.about-right{
+	background:$color__background-section1;
+	padding: 0 15px; 
+	@include MQ(SM){
+		padding-bottom: 50px;
+	}	
+	@include MQ(MD){
+		padding-bottom: 90px;
+	}
+	@include MQ(LG){
+		padding-bottom: 150px;
+	}
+	.elementor-element-populated{
+		padding: 0px !important;
+	}
+	.about-img{
+		margin-top:30px;
+		@include MQ(XL){
+			margin-top: -264px;
+		}
+		&:before{
+			content: "";
+			background-image: url("assets/admin/images/tree 1.png");
+			height: 30rem;
+			width: 36rem;
+			position: absolute;
+			right: -28%;
+			bottom: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: none;
+			@include MQ(XXL){
+				display: block;
+			}
+		}
+	}
+	.about-right__content{
+		padding: 0;
+		@include MQ(XL){
+			padding: 131px 160px 0px 120px;
+		}
+		.about-right__title{
+			h2{
+				font-family: $font__main;
+				font-size: 3rem;
+				padding-top: 30px;
+				color: $color__text-title;
+				line-height: 1.09;
+				@include MQ(MD){
+					padding: 30px 0px 0px 40px;
+				}
+				@include MQ(XL){
+					font-size: 6.4rem;
+					padding: 0;
+				}
+			}
+
+		}
+		.about-right__content-right{
+			font-family: font__main;
+			font-size: 1.8rem;
+			line-height: 1.56;
+			color: $color__text-main;
+			padding: 30px 0px;
+			@include MQ(MD){
+				padding: 3rem 1.5rem;
+			}
+			@include MQ(XXL){
+				padding:29px 95px 0px 90px;
+			}
+		}
+	}
+}
+.class-choose{
+	background: $color__background-section1;
+	height: 110%;
+	@include MQ(MD){
+		height: 60%;
+	}
+
+	.class-choose__title{
+		padding:15px 15px 0px 15px;
+		@include MQ(MD){
+			padding:0 0  1.5rem 0;
+
+		}
+		h2{
+			color:$color__text-title;
+			font-family:$font__main;
+			font-size: 3rem;
+			line-height: 1.09;
+			@include MQ(MD){
+				font-size: 6.4rem;
+			}
+		}
+		&:before{
+			content: "";
+			background-image: url("assets/admin/images/tree2.png");
+			height: 20rem;
+			width: 16rem;
+			top: -20%;
+			position: absolute;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+
+.class-choose__image{
+	
+	margin: 0px auto;
+	@include MQ(MD){
+		width: 73%;
+	}
+}
+.class-choose__img-item{
+	padding:10px 0px;
+	@include MQ(SM){
+		padding: 30px 0px;
+	}
+	@include MQ(MD){
+		padding: 0px 15px;
+	}
+
+	&.class-choose__img-first{
+		margin-top: 0px;
+		padding-left: 0px !important;
+		@include MQ(MD){
+			margin-top:-180px;
+		}
+
+		@include MQ(LG){
+			margin-top:-235px;
+			}
+		@include MQ(XXL){
+			margin-top:-465px;
+		}
+	}
+	&.class-choose__img-last{
+		padding-right: 0px;
+		.elementor-element{
+			padding-right: 0px;
+		}
+	}
+	.elementor-element-populated{
+		display: inline-block;
+		.class-view{
+			visibility: visible;
+			opacity: 0;
+			position: absolute;
+			background: #746db5;
+			border-radius: 100px;
+			padding:14px 25px;
+			cursor: pointer;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@include transition(all 0.7s ease-in-out);
+			text-align: center;
+			@include MQ(MD){
+				top: 25%;
+			}
+		
+			@include MQ(XL){
+				padding: 5px 25px;
+				top: 45%;
+			}
+			@include MQ(XXL){
+				padding: 14px 25px;
+				top: 45%;
+			}
+			h2{
+				letter-spacing: 3px;
+				line-height: 1.13;
+				color: #fff;
+				font-size: 1rem;
+				font-family: $font__default;
+				font-weight: 300;
+				@include MQ(XL){
+					font-size: 1.6rem;
+				}
+				
+
+			}
+		}
+		.class-choose__desc{
+			h2{
+				font-family:$font__default ;
+				font-size: 1rem;
+				padding: 15px 0px;
+			/*	padding: 35px 0px 20px 0px;*/
+				color:$color__text-desc ;
+				line-height:1.07 ;
+				font-weight: 300;
+				@include MQ(MD){
+					font-size: 1.4rem;
+				}
+				@include MQ(XL){
+					padding: 35px 0px 20px 0px;
+				}
+			}
+		}
+		.class-choose__name{
+			h2{
+				font-family: $font__main;
+				color:$color__text-title;
+				font-size: 2.6rem;
+				line-height: 1.28;	
+				@include MQ(XL){
+					font-size: 3.6rem
+				}
+			}
+		}
+		.class-choose__open, .class-choose__date{
+			display: inline-block;
+			h2{
+				font-family: $font__main;
+				font-size: 1.5rem;
+				line-height: 1.67;
+			}
+			
+		}
+		.class-choose__open{
+			h2{
+				color: $color__text-main;
+			}
+		}
+		.class-choose__date{
+			h2{
+				color:$color__text-date;
+			}
+		}
+		.elementor-widget-wrap{
+			&:hover{
+				.class-view {
+					visibility: visible;
+					opacity: 1;
+					
+				}
+			}
+		} 
+	}
+}
+.section-trainer{
+	padding: 0 13%;
+	margin:0 auto;
+	padding-top: 190px;
+	@include MQ(SM){
+	padding-top: 340px;
+
+	}
+	.trainer-title{
+		padding-bottom: 50px;
+		h2{
+			font-family:$font__main; 
+			object-fit: contain;
+			font-size: 6.4rem;
+			line-height: 1.09;
+			text-align: center;
+			color: $color__text-title;
+		}
+
+	}
+}
+.btn-view{
+	padding:2rem 0 6.5rem 0;
+	@include MQ(MD){
+		padding:2rem 0 25.5rem 0;
+	}
+	@include MQ(XL){
+		padding:2rem 0 45.5rem 0;
+	}
+	&.elementor-widget-button{
+		a{
+			&.elementor-button{
+				border-radius: 100px 100px ;	
+				font-family: $font__default;
+				font-size: 1.6rem;
+				padding: 18px 45px;
+				font-weight: 300;
+				line-height: 1.13;
+				letter-spacing: 3px;
+				text-align: center;
+				background-color: $color__background-button;
+				&:hover{
+					background-color: $color__background-button;
+					opacity: 0.6;
+				};
+			}
+			
+		} 
+	}
+}
+.section-video{
+	background-color:$color__background-section2;
+	.section-video__content{
+		margin:0 auto;
+		padding-top: 30px;
+		@include MQ(XXL){
+		padding: 0 13%;
+			
+		}
+	}
+	.section-video__left{
+		.elementor-widget-wrap{
+			padding:30px 0px 0px 0px;
+			
+			@include MQ(XXL){
+				padding-top: 140px
+			}
+			@include MQ(XXL){
+				padding-right: 130px;
+			}
+		}
+	}
+	.section-video__title{
+		font-family: $font__main;
+		font-size: 3rem;
+		line-height: 1.09;
+		margin-bottom: 3rem;
+		color:$color__text-title;
+		@include MQ(SM){
+			font-size:4rem;
+			margin-bottom: 4rem;
+		}
+		@include MQ(MD){
+			font-size: 4.5rem;
+			margin-bottom: 6rem;
+		}
+		@include MQ(LG){
+			font-size: 5.5rem;
+			margin-bottom: 6rem;
+		}
+		@include MQ(LG){
+			font-size: 6.4rem;
+			margin-bottom: 9rem;
+		}
+		&:before{
+			content:"";
+			background: url("assets/admin/images/tree2.png");
+			background-repeat: no-repeat;
+			width: 15rem;
+			height: 15rem;
+			position: absolute;
+			top: 10%;
+			left: 15%;;
+			transform: translate(-50%, -50%);
+			display: none;
+			@include MQ(XXL){
+				display: block;
+			}
+
+		}
+	}
+
+	.section-video__element{
+		padding:0;
+		opacity: 0.3; 
+		@include MQ(SM){
+		/*padding:0 0 3rem 9rem;*/
+		}
+		@include MQ(MD){
+		padding:0 0 3rem 5rem;
+		}
+		@include MQ(LG){
+		padding:0 0 3rem 9rem;
+		}
+		&.border-bottom{
+			border-bottom: 1px solid $color__background-hr;
+		}
+		&:hover{
+			opacity:1;
+			cursor: pointer;
+			@include transition(all 0.5s ease-in-out);
+			.section-video__time{
+				color:$color__text-date;
+			}
+		}
+	}
+	.section-video__name{
+		font-family: $font__main;
+		font-size: 2rem;
+		margin:0;
+		line-height: 1.33;
+		padding-bottom: 1.3rem;
+		color: $color__text-titlevideo;
+		@include MQ(XL){
+			font-size: 3rem;
+		}
+		&:before{
+			content: "\f0da";
+			font: normal normal normal 16px/1 FontAwesome;
+			position: absolute;
+			color: #fff;
+			text-align: center;
+			width: 4rem;
+			height: 4rem;
+			line-height: 40px;
+			left:2.5rem;
+			border-radius: 100%;
+			background: $color__text-date;
+			cursor: pointer;
+			display: none;
+			@include MQ(XXL){
+				display: block;
+			}
+		}
+		&:hover{
+			h2, &:before{
+				cursor:pointer;
+
+			}
+		}
+	}
+	.section-video__desc{
+		font-family: $font__main;
+		font-size: 1rem;
+		line-height: 1.56;
+		color: $color__text-main;
+		margin:0;
+		padding-bottom: 3.3rem;
+		@include MQ(SM){
+			font-size: 1.3rem;
+		}
+		@include MQ(MD){
+			font-size: 1.8rem;
+		}
+	}
+	.section-video__right{
+		margin-top: 0px;
+		@include MQ(MD){
+			margin-top: -165px;
+		}
+		.elementor-image{
+			&:before{
+				content: "\f0da";
+				font: normal normal normal 23px/1 FontAwesome;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #fff;
+				text-align: center;
+				width: 5rem;
+				height: 5rem;
+				line-height: 50px;
+				border-radius: 100%;
+				background: #746db5;
+				cursor: pointer;
+				@include MQ(MD){
+					width:6rem;
+					height: 6rem;
+					line-height: 60px;
+				}
+				include MQ(MD){
+					width:6rem;
+					height: 6rem;
+					line-height: 60px;
+				}
+				include MQ(XXL){
+					width:9rem;
+					height: 9rem;
+					line-height: 90px;
+				}
+			}
+			&:hover{
+				opacity:0.7;
+			}
+		}
+	}
+}
+.section-workshop{
+	background-color:$color__background-section2;
+	height: 100%;
+	@include MQ(XXL){
+		height: 60%
+	}
+	.section-workshop__titlle{
+		h2{
+			font-family: $font__main;
+			font-size: 3rem;
+			line-height: 1.09;
+			text-align: center;
+			color: #003b5b;
+			padding: 3rem 0 3rem 0;
+			@include MQ(SM){
+				padding: 5rem 0  5rem 0;
+				font-size: 4rem;
+			}
+			@include MQ(MD){
+				padding: 0 0 5rem 0;
+				font-size: 5rem;
+			}
+			@include MQ(XXL){
+				padding: 16.5rem 0 10rem 0;
+				font-size: 6.4rem;
+			}
+		}
+	}
+	.section-workshop__name{
+		h2{
+			font-family: $font__main;
+			font-size: 2rem;
+			line-height: 1.15;
+			text-align: center;
+			color: $color__text-title;
+			padding: 3rem  0;
+			width: 100%;
+			margin: 0 auto;
+			@include MQ(XXL){
+				font-size: 4.8rem;
+				padding: 5rem 0 3.8rem 0;
+				width: 40%;
+			}
+			
+		}
+	}
+	.section-workshop__date{
+		&.elementor-widget-heading{
+			span{
+				font-family: $font__main;
+				font-size: 1.5rem;
+				line-height: 1.67;
+				text-align: center;
+				color: $color__text-date;
+				display: block;
+				padding-bottom: 3rem;
+				@include MQ(XXL){
+					padding-bottom: 19rem;
+
+				}
+			}
+		} 
+	}
+}

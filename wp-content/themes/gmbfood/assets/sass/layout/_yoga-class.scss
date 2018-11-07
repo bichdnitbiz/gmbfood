@@ -1,0 +1,160 @@
+.class{
+	padding:0 36%;
+	.class-title{
+		h2{
+			font-family: $font__main;
+			font-size: 7.5rem;
+			line-height: 1.07;
+			text-align: center;
+			color: $color__text-title;
+			padding: 135px 184px  120px 18px; 
+		}
+	}
+}
+.class-row{
+	.class-item{
+		padding:0px 0 7rem;
+		@include MQ(MD){
+			padding:0px 1.5rem  17rem 1.5rem;
+		}
+		.elementor-image-box-wrapper{
+			.elementor-image-box-img{
+					display: block;
+				img{
+					display: block;
+				}
+			}
+			.elementor-image-box-content{
+				text-align:left;
+				h3{
+					margin:0;
+					padding:35px 0px 10px 0px;
+					font-family: $font__default;
+					font-size: 1.4rem;
+					font-weight: 300;
+					line-height: 1.07;
+					color: $color__text-desc;
+				}
+				.view{
+					background-color: $color__background-button;
+					font-family: $font__default;
+					font-size: 1rem;
+					font-weight: 300;
+					line-height: 1.13;
+					letter-spacing: 3px;
+  					color: $color__text-button;
+  					border-radius: 100px 100px;
+  					padding:13px 15px;
+					position: absolute;
+					top: 60%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					visibility: hidden;
+					opacity: 0;
+					cursor: pointer;
+					@include MQ(XXL){
+						padding:14px 28px;
+						font-size: 1.6rem;
+					}
+				}
+				.name{
+					margin:0;
+					display: block;
+					padding-bottom: 5px;
+					font-family: $font__main;
+					font-size: 1.6rem;
+					line-height: 1.28;
+					color: $color__text-title;
+					@include MQ(MD){
+						font-size: 2.6rem;
+					}
+					@include MQ(LG){
+						font-size: 3.6rem;
+					}
+				}
+				.open{
+					font-family: $font__main;
+					font-size: 1.5rem;
+					line-height: 1.67;
+					color: $color__text-main;
+				}
+				.date{
+					font-family: $font__main;
+					font-size: 1.5rem;
+					line-height: 1.67;
+					color: $color__text-date;
+
+				}
+			}
+			&:hover{
+				.elementor-image-box-content{
+					.view{
+						top: 45%;
+						@include transition(all 0.7s ease-in-out);
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+.class-row-center{
+	.class-item-center{
+		.elementor-image-box-content{
+			text-align:center !important ;
+			h3{
+				padding: 30px 0px 20px 0px !important ;
+				font-family: $font__default ;
+				font-size: 1.8rem !important;
+				font-weight: 300;
+				line-height: 0.83 !important ;
+				color: $color__text-desc;
+				@include MQ(MD){
+					padding: 50px 0px 30px 0px !important ;
+				}
+				@include MQ(LG){
+					padding: 70px 0px 40px 0px !important ;
+				}
+			}
+			.name{
+				margin:0;
+				display: block;
+				padding-bottom: 10px !important;
+				font-family: $font__main;
+				font-size: 3.5rem !important;
+				line-height: 1.07 !important;
+				color: $color__text-title;
+				@include MQ(MD){
+					font-size: 5.5rem!important;
+				}
+				@include MQ(LG){
+					font-size: 6.5rem!important;
+				}
+				@include MQ(XL){
+					font-size: 7.5rem!important;
+					padding-bottom: 30px !important;
+				}
+			}
+
+			.open,.date{
+				font-family: $font__main;
+				font-size: 1.5rem !important;
+				line-height: 1.33 !important;
+				color: $color__text-main;
+				@include MQ(MD){
+					font-size: 2rem !important;
+				}
+				@include MQ(LG){
+					font-size: 3rem !important;
+				}
+			}
+			.date{
+				color: $color__text-date;
+
+			}
+		}
+
+	}
+
+}

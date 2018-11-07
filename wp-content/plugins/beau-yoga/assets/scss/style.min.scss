@@ -1,0 +1,17 @@
+@import './redux/redux';
+@import './redux/fields/field_color_rgba';
+@import './redux/fields/field_button_set';
+.redux-container #redux-form-wrapper .redux-sidebar-head .redux-logo { 
+    background-image: url(../images/beau-core.png);
+}
+.about-wrap .about-description, .about-wrap .about-text {
+    margin-top: 1.4em;
+    font-weight: 400;
+    line-height: 1.6em;
+    font-size: 19px;
+}
+.beau-thanks {
+    float: left;
+    width: 100%;
+}
+

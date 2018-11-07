@@ -1,0 +1,130 @@
+.facilities-content{
+	.section-whoweare__tab{
+		margin-bottom: 0px !important;
+	}
+}
+//About 
+.about-left{
+	// padding:0 13%;
+	padding-top:130px;
+	background-color: $color__background-section1;
+	.about-left__title{
+		h2{
+			font-family: $font__main;
+			font-size: 3rem;
+			line-height: 1.09;
+			color:$color__text-title;
+			padding: 30px 0px;
+			@include MQ(SM){
+				font-size: 4rem;
+			}
+			@include MQ(MD){
+				font-size: 5rem;
+			}
+			@include MQ(LG){
+				font-size: 6.4rem;
+				margin-top: 80px;
+			}
+		}
+		&:before{
+			content: "";
+			background-image: url(assets/admin/images/tree2.png);
+		    height: 15rem;
+		    width: 15rem;
+		    top: 25%;
+		    left: 2%;
+		    position: absolute;
+		    background-repeat: no-repeat;
+		    display: none;
+		    @include MQ(XXL){
+		    	display: block;
+		    }
+		}
+	}
+	.image-jonteam__teacher{
+		margin-top: 0;
+		@include MQ(MD){
+			margin-top: -18.5rem;
+		}
+	}
+}
+
+.about-left-content{
+	font-family: $font__main;
+	font-size:1.5rem;
+	line-height: 2.8rem;
+	color: $color__text-main;
+	margin-bottom: 3rem;
+	/*padding:0 15px;*/
+	@include MQ(MD){
+		font-size:1.5rem;
+		padding-right: 1.5rem;
+
+	}
+	@include MQ(XL){
+		padding:3rem 15rem 0 9rem;
+	}
+}
+
+.who-we-are-center{
+	background-color: $color__background-section1;
+	.about-center__content{
+		p{
+			font-family: $font__main;
+			font-size: 1.5rem;
+			line-height: 1.56;
+			color: $color__text-main;
+			padding: 3rem 0 0 0;
+			@include MQ(MD){
+				padding: 11rem 25rem 0px 25rem;	
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+.who-we-are__desc{
+	background-color: $color__background-section1;
+	padding:0;
+	@include MQ(XXL){
+		padding: 0 19%;
+	}
+	.elementor-widget-container{
+		h2{
+			font-family: $font__main;
+			font-size: 3rem;
+			line-height: 1.07;
+			text-align: center;
+			color: $color__text-title;
+			padding:3rem 0px;
+			@include MQ(MD){
+				font-size: 4rem;
+				padding:17rem 0px 30.5rem 0px;
+			}	
+			@include MQ(LG){
+				font-size: 5rem;
+			}	
+			@include MQ(XL){
+				font-size: 6rem;
+			}	
+			@include MQ(XXL){
+				font-size: 7.5rem;
+			}
+			&:before{
+					content: "";
+					background-image: url('assets/admin/images/bg-tree-03.png');
+					height: 60rem;
+					width: 45rem;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					position: absolute;
+					background-repeat: no-repeat;
+					display: none;
+					@include transition(all 0.3s ease-in-out);
+					@include MQ(XXL){
+						display: block;
+					}
+			}
+		}
+	}
+}

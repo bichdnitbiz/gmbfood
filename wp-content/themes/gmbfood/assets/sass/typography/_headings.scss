@@ -1,0 +1,39 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.title-element-build.elementor-widget-heading .elementor-heading-title{
+	font-size: 6.4rem;
+	line-height: 7rem;
+	color: $color__background-button-hover;
+	font-family: $font__main;
+}
+
+.title-heading{
+	position: relative;
+	padding: 5rem 0;
+	font-family: $font__main;
+	text-align: center;
+	color: $color__text-title;
+	width: 100%;
+	@include MQ(MD){
+		padding: 10rem 0;
+	}
+	&.padding{
+		padding: 2rem 0;
+		@include MQ(MD){
+			padding: 10rem 25% 4rem;
+			padding: 5rem 0;
+		}
+	}
+	
+	&:before{
+		content: "";
+	    width: 17rem;
+	    height: 15rem;
+	    background: url(assets/admin/images/tree2.png);
+	    background-repeat: no-repeat;
+	    @include center(xy);
+	    position: absolute;
+	}
+}
